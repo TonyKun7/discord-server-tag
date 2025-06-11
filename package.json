@@ -1,0 +1,36 @@
+{
+  "name": "discord-server-tag",
+  "description": "This package emits a custom 'userTagUpdate' event whenever a user's Server Tag changes, and exposes a 'getUserTag' method to access the tag.",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "node --loader ts-node/esm example/test.ts"
+  },
+  "keywords": ["discord", "bot", "discord.js", "tag", "user", "event"],
+  "author": "TonyKun",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "discord.js": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "globals": "^16.2.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

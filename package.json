@@ -10,17 +10,26 @@
     }
   },
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "node --loader ts-node/esm example/test.ts"
   },
-  "keywords": ["discord", "bot", "discord.js", "tag", "user", "event"],
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "tag",
+    "user",
+    "event"
+  ],
   "author": "TonyKun",
   "license": "CC0-1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TonyKun7/discord-server-tag.git"
+    "url": "git+https://github.com/TonyKun7/discord-server-tag.git"
   },
   "bugs": {
     "url": "https://github.com/TonyKun7/discord-server-tag/issues"

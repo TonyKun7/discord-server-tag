@@ -1,7 +1,7 @@
 {
   "name": "discord-server-tag",
   "description": "This package emits a custom 'userTagUpdate' event whenever a user's Server Tag changes, and exposes a 'getUserTag' method to access the tag.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.cjs",
   "exports": {
     ".": {
